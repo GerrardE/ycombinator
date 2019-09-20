@@ -1,0 +1,148 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+  padding-top: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.nav-container {
+  background-color: #ff6600;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  color: rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-underline .nav-link {
+  font-size: .875rem;
+  color: #000;
+}
+
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 900;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+.ml-auto {
+  position: absolute;
+  left: auto !important;
+  right: 12%;
+}
+
+span.seperator {
+  color:#000;
+  font-size: 20px;
+  margin: 3px 0
+}
+
+.hacker-logo{
+  width: 36px;
+  height: auto;
+  border: 1px solid #fff;
+}
+
+.arrow{
+  height: 10px;
+  margin: 0.5% -.2% 0% 0.3%;
+}
+
+.media{
+  padding: 0 20% 0 1%;
+}
+
+.index {
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.text-wrap{
+  word-break: break-word;
+  padding-right: 10%
+}
+
+a{
+  color: #000 !important;
+  text-decoration: none !important
+}
+
+.mr-2{
+  margin-left: 4%;
+  margin-bottom: 2.5%;
+  font-size: 14px
+}
+
+.bg-orange{
+  background-color:#f6f6ef;
+}
+
+.bottom{
+  border-bottom: 1px solid #ff6600;
+  margin: 2% 0.5;
+}
+
+.text-gray{
+  color: gray
+}
+
+.text-1{
+  font-size: 14px
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: #6f42c1; }
+
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+.lh-150 { line-height: 1.5; }
